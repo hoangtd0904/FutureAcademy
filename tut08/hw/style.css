@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: rgb(216, 216, 216);
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    width: 98%;
+    height: 35vh;
+    margin-top: 4vh;
+    position: relative;
+}
+
+.header>h2 {
+    font-size: 200%;
+}
+
+.option-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 25vw;
+    background-color: white;
+    margin-left: 1.5vw;
+    padding: 1vh 2vw;
+}
+
+.breaker {
+    height: 40vh;
+}
+
+
+/* Exe1 */
+
+.exe1 .header {
+    background-color: rgb(128, 175, 220);
+}
+
+.exe1 .header>h2 {
+    color: white;
+    padding: 5vh 30vw 5vh 5vw;
+}
+
+.exe1 .option-container {
+    position: absolute;
+    top: 30vh;
+}
+
+.exe1 .option {
+    height: 40vh;
+}
+
+
+/* Exe2 */
+
+.exe2 .header {
+    text-align: center;
+}
+
+.exe2 .header>p {
+    padding: 0 10vw;
+}
+
+.exe2 .option {
+    padding: 0;
+}
+
+.exe2 .image p {
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    line-height: 40vh;
+    font-size: 150%;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.exe2 .text {
+    padding: 5vh 2vw;
+}
+
+
+/* Exe3 */
+
+.exe3 {
+    display: flex;
+    flex-direction: column;
+    width: 98vw;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px dashed red;
+    padding: 3vh 0;
+}
+
+.post:last-child {
+    border-bottom: none;
+}
+
+.exe3 .image>p {
+    color: white;
+    font-size: 300%;
+    padding: 5vh 3vw;
+    background-color: violet;
+    border-radius: 5px;
+}
+
+.exe3 .text {
+    padding-left: 2vw;
+}
