@@ -1,0 +1,272 @@
+/* .container{
+    display: flex;
+    max-width: 670px;
+    height: auto;
+}
+
+.text{
+    margin-left: 20px;
+}
+
+.category{
+    color: rgb(158, 19, 43);
+    font-size: 11px;
+}
+
+.date{
+    font-size: 11px;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+html {
+    background-color: #ededed;
+}
+
+.box {
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 5px;
+    margin: 5px;
+    background-color: white;
+}
+
+.fb-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fb-sidebar-container,
+.fb-main-content-container,
+.fb-header-container {
+    background-color: inherit;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fb-header-cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-cover {
+    height: 380px;
+    border-radius: 0 0 5px 5px;
+    z-index: 0;
+}
+
+.profile-avatar {
+    border-radius: 50%;
+    border: 5px solid white;
+    position: absolute;
+    top: 195px;
+    z-index: 1;
+}
+
+.profile-name {
+    background-color: white;
+    position: absolute;
+    width: 850px;
+    top: 380px;
+    padding-top: 25px;
+}
+
+.profile-name h1 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.profile-name p {
+    margin-top: 0;
+    text-align: center;
+}
+
+.hr {
+    border-bottom: 1px solid black;
+    width: 850px;
+    height: 100px;
+}
+
+.profile-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 850px;
+    padding: 3px 0;
+}
+
+.menu .box {
+    padding: 10px 20px;
+}
+
+.profile-menu div {
+    display: inline-block;
+    color: rgb(2, 2, 2);
+    font-weight: bold;
+    margin: 0;
+}
+
+.menu>div:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+
+/* body */
+
+.fb-body-container {
+    display: flex;
+    flex-direction: row;
+    width: 982px;
+    justify-content: center;
+    background-color: inherit;
+}
+
+.fb-main-content-container {
+    width: 500px;
+    background-color: inherit;
+}
+
+
+/* sidebar */
+
+.fb-sidebar-container {
+    width: 360px;
+    background-color: inherit;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 360px;
+}
+
+.sidebar-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 16px;
+}
+
+.sidebar-head>h2>a {
+    color: black;
+}
+
+.sidebar-head>h2:hover {
+    text-decoration: underline;
+}
+
+.intro {
+    line-height: 250%;
+}
+
+.intro .featured {
+    display: flex;
+}
+
+.life-events-prevw,
+.photos-prevw,
+.friends-prevw {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.friend-avatar>img {
+    border-radius: 7px;
+}
+
+.friend {
+    width: 102px;
+    height: 140px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.friend-name {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 35px;
+    font-size: 14px;
+}
+
+.life-events {
+    height: 318px;
+}
+
+
+/* .life-events-prevw {} */
+
+.life-event {
+    width: 160px;
+    height: 243px;
+    border: 1px solid gray;
+    margin-right: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.life-event:first-child {
+    border-radius: 7px 0 0 7px;
+}
+
+.life-event:last-child {
+    border-radius: 0 7px 7px 0;
+}
+
+.life-event div {
+    padding: 5px 10px;
+}
+
+.event-img {
+    padding: 0;
+}
+
+.event-text {
+    text-align: center;
+}
+
+.event-text>p {
+    font-size: 75%;
+}
+
+.event-text>h3 {
+    font-size: 100%;
+    font-weight: bolder;
+}
+
+.details-footer ul li {
+    display: inline-block;
+}
+
+.details-footer ul li>a {
+    color: black;
+    padding-right: 2px;
+    font-size: 13px;
+}
+
+.details-footer ul li>a:hover {
+    text-decoration: underline;
+}
+
+
+/* .details-footer ul li>a:last-child:hover {
+    text-decoration: none;
+} */
