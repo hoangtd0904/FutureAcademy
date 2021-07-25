@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quantrimang clone</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -14,21 +14,22 @@
 
 <body>
     <div id="main" class="container">
+        <!-- header -->
         <div id="header">
             <div class="header-logo">
                 <a class="navbar-brand logo" href="#"><img src="./assets/img/logo/logo.png" alt=""></a>
                 <form class="search-box">
                     <input class="form-control " type="search" placeholder="Tìm kiếm" aria-label="Search">
-                    <button class="btn " type="submit"><i class="fas fa-search"></i></button>
+                    <button class="btn " type="submit"><i class="ti-search"></i></button>
                 </form>
                 <a href="" class="loggin-btn">Đăng nhập</a>
             </div>
             <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="">
+                <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#"><i class="ti-home"></i></a>
@@ -67,20 +68,319 @@
                                 <a class="nav-link" href="#"> Video </a>
                             </li>
                         </ul>
-                        <a class="right-nav-item" href="#">Tất cả <i class="ti-menu nav-icon"></i></a>
-
                     </div>
+                    <a class="right-nav-item" href="#">Tất cả <i class="ti-menu nav-icon"></i></a>
                 </div>
             </nav>
         </div>
-        <div id="content">
 
-        </div>
-        <div id="sidebar">
+        <!-- main content -->
+        <div class="row">
 
+            <!-- content -->
+            <div id="content" class="col-8">
+                <!-- slide -->
+                <div class="sliders">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/thumb/slide/slide.jpg" class="d-block w-100 thumbnail" alt="...">
+                        <span>Cách đăng ký luồng xanh đầy đủ, chi tiết nhất</span>
+                    </div>
+                </div>
+                <div class="ads">
+                    <div class="ad-description thumbnail">AD</div>
+                </div>
+                <!-- post list -->
+                <div class="posts">
+                    <ul class="post-list">
+                        <li class="post-item row">
+                            <div class="col-4 post-item-image">
+                                <a href="#"><img src="./assets/img/thumb/thumb/main/post1.jpg" alt="" class="thumbnail"></a>
+                            </div>
+                            <div class="col-8 post-item-text">
+                                <a href="#">
+                                    <h3>Cách tăng tốc game với Lulubox</h3>
+                                </a>
+                                <p class="item-description-text">
+                                    Một trong những tính năng hàng đầu mà bạn nhận được sau khi tải xuống Lulubox trên điện thoại Android của mình là khả năng tăng tốc độ chơi game. Bạn sẽ thấy ít độ trễ hơn, hiệu suất được cải thiện và trải nghiệm thú vị hơn.
+                                </p>
+                                <div class="item-detail">
+                                    <div class="post-author">
+                                        <img src="./assets/img/thumb/avatar/avatar.jpg" alt="" class="post-author-img">
+                                        <a href="" class="post-author-name"> Nguyễn Thu Hà</a>
+                                    </div>
+                                    <p class="post-time">43 phút trước</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="post-item row">
+                            <div class="col-4 post-item-image">
+                                <a href="#"><img src="./assets/img/thumb/thumb/main/post2.jpg" alt="" class="thumbnail"></a>
+                            </div>
+                            <div class="col-8 post-item-text">
+                                <a href="#">
+                                    <h3>Louis Vuitton trình làng mẫu loa Bluetooth cầm tay có thiết kế cực độc, giá 66 triệu đồng</h3>
+                                </a>
+                                <p class="item-description-text">
+                                    LV vừa một lần nữa gây chú ý khi trình làng một mẫu loa di động Bluetooth có thiết kế cực kỳ độc đáo, trong hệt như chiếc đĩa bay của người ngoài hành tinh.
+                                </p>
+                                <div class="item-detail">
+                                    <div class="post-author">
+                                        <img src="./assets/img/thumb/avatar/avatar.jpg" alt="" class="post-author-img">
+                                        <a href="" class="post-author-name"> Phạm Hải</a>
+                                    </div>
+                                    <p class="post-time">1 giờ trước</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="post-item row">
+                            <div class="col-4 post-item-image">
+                                <a href="#"><img src="./assets/img/thumb/thumb/main/post3.jpg" alt="" class="thumbnail"></a>
+                            </div>
+                            <div class="col-8 post-item-text">
+                                <a href="#">
+                                    <h3>Li-Fi có thể thay thế các công nghệ không dây thông thường không?</h3>
+                                </a>
+                                <p class="item-description-text">
+                                    Li-Fi đã thay thế WiFi trong việc cung cấp băng thông và kết nối dữ liệu tốc độ cao bằng cách sử dụng đèn LED. Những bóng đèn này có gắn các vi mạch đóng vai trò là access point. Công nghệ Li-Fi giải quyết các vấn đề cơ bản của công nghệ không dây thông
+                                    thường như nhiễu RF, bão hòa phổ và thậm chí cả những thách thức về hệ thống cáp.
+                                </p>
+                                <div class="item-detail">
+                                    <div class="post-author">
+                                        <img src="./assets/img/thumb/avatar/avatar.jpg" alt="" class="post-author-img">
+                                        <a href="" class="post-author-name"> Phạm Hải</a>
+                                    </div>
+                                    <p class="post-time">1 giờ trước</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="post-item row">
+                            <div class="col-4 post-item-image">
+                                <a href="#"><img src="./assets/img/thumb/thumb/main/post4.jpg" alt="" class="thumbnail"></a>
+                            </div>
+                            <div class="col-8 post-item-text">
+                                <a href="#">
+                                    <h3>Game khủng long trên Google Chrome cập nhật chủ đề Olympic</h3>
+                                </a>
+                                <p class="item-description-text">
+                                    Google vừa thay đổi một chút cho game khủng long trên Chrome để chào mừng Olympics Tokyo 2020.
+                                </p>
+                                <div class="item-detail">
+                                    <div class="post-author">
+                                        <img src="./assets/img/thumb/avatar/avatar.jpg" alt="" class="post-author-img">
+                                        <a href="" class="post-author-name"> Phạm Hải</a>
+                                    </div>
+                                    <p class="post-time">1 giờ trước</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ad-description post-ad-description thumbnail">
+                            AD
+                        </li>
+                        <li class="post-item row">
+                            <div class="col-4 post-item-image">
+                                <a href="#"><img src="./assets/img/thumb/thumb/main/post5.jpg" alt="" class="thumbnail"></a>
+                            </div>
+                            <div class="col-8 post-item-text">
+                                <a href="#">
+                                    <h3>Mẫu đơn nhận tiền trợ cấp Covid-19</h3>
+                                </a>
+                                <p class="item-description-text">
+                                    Mẫu đơn nhận tiền trợ cấp Covid-19 sẽ tùy theo từng đối tượng theo quy định của Chính phủ mà nội dung, cũng như thủ tục làm hồ sơ nhận tiên tiền trợ cấp Covid-19 sẽ khác nhau
+                                </p>
+                                <div class="item-detail">
+                                    <div class="post-author">
+                                        <img src="./assets/img/thumb/avatar/avatar.jpg" alt="" class="post-author-img">
+                                        <a href="" class="post-author-name"> Nguyễn Trang</a>
+                                    </div>
+                                    <p class="post-time">22 giờ trước</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="viewmore-btn">
+                        <a href="#" class="viewmore thumbnail">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- sidebar -->
+            <div id="sidebar" class="col-4">
+
+                <div class="side-post-ad ad-description thumbnail">AD</div>
+                <!-- side post -->
+                <div class=" side-post ">
+                    <div class="side-head ">
+                        <h3>Được đề cử</h3>
+                    </div>
+                    <div class="side-content ">
+                        <ul class="side-content-list">
+                            <li class="side-content-item">
+                                <div class="side-item-img">
+                                    <img src="./assets/img/thumb/thumb/side/side-post1.jpg" alt="" class="thumbnail">
+                                </div>
+                                <div class="side-item-title">
+                                    <a href="#">Mẫu giấy đi đường, mẫu giấy thông hành Covid-19</a>
+                                </div>
+                            </li>
+                            <li class="side-content-item">
+                                <div class="side-item-img">
+                                    <img src="./assets/img/thumb/thumb/side/side-post1.jpg" alt="" class="thumbnail">
+                                </div>
+                                <div class="side-item-title">
+                                    <a href="#">Mẫu giấy đi đường, mẫu giấy thông hành Covid-19</a>
+                                </div>
+                            </li>
+                            <li class="side-content-item">
+                                <div class="side-item-img">
+                                    <img src="./assets/img/thumb/thumb/side/side-post1.jpg" alt="" class="thumbnail">
+                                </div>
+                                <div class="side-item-title">
+                                    <a href="#">Mẫu giấy đi đường, mẫu giấy thông hành Covid-19</a>
+                                </div>
+                            </li>
+                            <li class="side-content-item">
+                                <div class="side-item-img">
+                                    <img src="./assets/img/thumb/thumb/side/side-post1.jpg" alt="" class="thumbnail">
+                                </div>
+                                <div class="side-item-title">
+                                    <a href="#">Mẫu giấy đi đường, mẫu giấy thông hành Covid-19</a>
+                                </div>
+                            </li>
+                            <li class="side-content-item">
+                                <div class="side-item-img">
+                                    <img src="./assets/img/thumb/thumb/side/side-post1.jpg" alt="" class="thumbnail">
+                                </div>
+                                <div class="side-item-title">
+                                    <a href="#">Mẫu giấy đi đường, mẫu giấy thông hành Covid-19</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" side-post ">
+                    <div class="side-head ">
+                        <h3>Được đề cử</h3>
+                    </div>
+                    <div class="side-content ">
+                        <ul class="side-content-list">
+                            <li class="side-content-item">
+                                <div class="side-item-img">
+                                    <img src="./assets/img/thumb/thumb/side/side-post1.jpg" alt="" class="thumbnail">
+                                </div>
+                                <div class="side-item-title">
+                                    <a href="#">Mẫu giấy đi đường, mẫu giấy thông hành Covid-19</a>
+                                </div>
+                            </li>
+                            <li class="side-content-item">
+                                <div class="side-item-img">
+                                    <img src="./assets/img/thumb/thumb/side/side-post1.jpg" alt="" class="thumbnail">
+                                </div>
+                                <div class="side-item-title">
+                                    <a href="#">Mẫu giấy đi đường, mẫu giấy thông hành Covid-19</a>
+                                </div>
+                            </li>
+                            <li class="side-content-item">
+                                <div class="side-item-img">
+                                    <img src="./assets/img/thumb/thumb/side/side-post1.jpg" alt="" class="thumbnail">
+                                </div>
+                                <div class="side-item-title">
+                                    <a href="#">Mẫu giấy đi đường, mẫu giấy thông hành Covid-19</a>
+                                </div>
+                            </li>
+                            <li class="side-content-item">
+                                <div class="side-item-img">
+                                    <img src="./assets/img/thumb/thumb/side/side-post1.jpg" alt="" class="thumbnail">
+                                </div>
+                                <div class="side-item-title">
+                                    <a href="#">Mẫu giấy đi đường, mẫu giấy thông hành Covid-19</a>
+                                </div>
+                            </li>
+                            <li class="side-content-item">
+                                <div class="side-item-img">
+                                    <img src="./assets/img/thumb/thumb/side/side-post1.jpg" alt="" class="thumbnail">
+                                </div>
+                                <div class="side-item-title">
+                                    <a href="#">Mẫu giấy đi đường, mẫu giấy thông hành Covid-19</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" side-post ">
+                    <div class="side-head ">
+                        <h3>Được đề cử</h3>
+                    </div>
+                    <div class="side-content ">
+                        <ul class="side-content-list">
+                            <li class="side-content-item">
+                                <div class="side-item-img">
+                                    <img src="./assets/img/thumb/thumb/side/side-post1.jpg" alt="" class="thumbnail">
+                                </div>
+                                <div class="side-item-title">
+                                    <a href="#">Mẫu giấy đi đường, mẫu giấy thông hành Covid-19</a>
+                                </div>
+                            </li>
+                            <li class="side-content-item">
+                                <div class="side-item-img">
+                                    <img src="./assets/img/thumb/thumb/side/side-post1.jpg" alt="" class="thumbnail">
+                                </div>
+                                <div class="side-item-title">
+                                    <a href="#">Mẫu giấy đi đường, mẫu giấy thông hành Covid-19</a>
+                                </div>
+                            </li>
+                            <li class="side-content-item">
+                                <div class="side-item-img">
+                                    <img src="./assets/img/thumb/thumb/side/side-post1.jpg" alt="" class="thumbnail">
+                                </div>
+                                <div class="side-item-title">
+                                    <a href="#">Mẫu giấy đi đường, mẫu giấy thông hành Covid-19</a>
+                                </div>
+                            </li>
+                            <li class="side-content-item">
+                                <div class="side-item-img">
+                                    <img src="./assets/img/thumb/thumb/side/side-post1.jpg" alt="" class="thumbnail">
+                                </div>
+                                <div class="side-item-title">
+                                    <a href="#">Mẫu giấy đi đường, mẫu giấy thông hành Covid-19</a>
+                                </div>
+                            </li>
+                            <li class="side-content-item">
+                                <div class="side-item-img">
+                                    <img src="./assets/img/thumb/thumb/side/side-post1.jpg" alt="" class="thumbnail">
+                                </div>
+                                <div class="side-item-title">
+                                    <a href="#">Mẫu giấy đi đường, mẫu giấy thông hành Covid-19</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <!-- footer -->
         <div id="footer">
-
+            <div class="footer-container">
+                <div class="support-footer">
+                    <a href="#" class="support-link-footer">Giới thiệu</a> |
+                    <a href="#" class="support-link-footer">Điều khoản </a> |
+                    <a href="#" class="support-link-footer">Bảo mật</a> |
+                    <a href="#" class="support-link-footer">Hướng dẫn</a> |
+                    <a href="#" class="support-link-footer">Ứng dụng</a> |
+                    <a href="#" class="support-link-footer">Liên hệ</a> |
+                    <a href="#" class="support-link-footer">Quảng cáo</a> |
+                    <a href="#" class="support-link-footer">Facebook</a> |
+                    <a href="#" class="support-link-footer">Youtube</a> |
+                    <a href="#" class="support-link-footer">DMCA</a>
+                </div>
+                <div class="licence-footer">
+                    Giấy phép số 362/GP-BTTTT. Bộ Thông tin và Truyền thông cấp ngày 30/06/2016. Cơ quan chủ quản: CÔNG TY CỔ PHẦN MẠNG TRỰC TUYẾN META. Địa chỉ: 56 Duy Tân, Dịch Vọng Hậu, Cầu Giấy, Hà Nội. Điện thoại: <a href="#" class="support-phone">024 2242 6188</a>.
+                    Email: info@meta.vn. Chịu trách nhiệm nội dung: Lê Ngọc Lam.
+                </div>
+                <div class="copyright-footer">
+                    Bản quyền © 2003-2021 QuanTriMang.com. Giữ toàn quyền. Không được sao chép hoặc sử dụng hoặc phát hành lại bất kỳ nội dung nào thuộc QuanTriMang.com khi chưa được phép.
+                </div>
+            </div>
         </div>
     </div>
 </body>
