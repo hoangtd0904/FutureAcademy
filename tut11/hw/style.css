@@ -1,0 +1,43 @@
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col-6 {
+    width: 50%;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+
+/* main */
+
+.hide {
+    display: none;
+}
+
+.btn {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.div {
+    max-width: 100%;
+    padding: 16px;
+    text-align: center;
+    line-height: 100px;
+    height: 100px;
+    font-size: 36px;
+    margin: 16px;
+}
+
+#hidDiv {
+    background: rgb(137, 184, 90);
+    color: #fff;
+}
+
+#colorDiv {
+    background: #ccc;
+}
