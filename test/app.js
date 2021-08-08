@@ -103,33 +103,113 @@
 
 //Ex5: calendar
 
-function dayCheck() {
+// function dayCheck() {
 
-    function isLeapYear(year) {
-        if ((year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) || (year % 100 === 0 && year % 400 === 0)) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+//     let oddMonth = [1, 3, 5, 7, 8, 10, 12];
+//     let evenMonth = [4, 6, 9, 11];
+//     let febDays;
 
-    let date = prompt('Enter DD/MM/YYYY ');
-    if (date.indexOf('/') == -1) {
-        alert('Invalid date !');
-        dayCheck();
-    } else {
-        let dateArr = date.split('/');
-        let day = dateArr[0];
-        let month = dateArr[1];
-        let year = dateArr[2];
+//     function nextDay(day, month, year) {
+//         if (oddMonth.includes(month)) {
+//             if (month !== 12) {
+//                 if (day < 31) {
+//                     day++;
+//                     return `${day}/${month}/${year}`;
+//                 } else {
+//                     day++;
+//                     month++;
+//                     return `${day}/${month}/${year}`;
+//                 }
+//             } else {
+//                 if (day < 31) {
+//                     day++;
+//                     return `${day}/${month}/${year}`;
+//                 } else {
+//                     day = 1;
+//                     month = 1;
+//                     year++;
+//                     return `${day}/${month}/${year}`;
+//                 }
+//             }
+//         } else if (evenMonth.includes(month)) {
+//             if (day < 30) {
+//                 day++;
+//                 return `${day}/${month}/${year}`;
+//             } else {
+//                 day++;
+//                 month++;
+//                 return `${day}/${month}/${year}`;
+//             }
+//         } else if (month === 2) {
+//             if (day < febDays) {
+//                 day++;
+//                 return `${day}/${month}/${year}`;
+//             } else {
+//                 day++;
+//                 month++;
+//                 return `${day}/${month}/${year}`;
+//             }
+//         }
+//     }
 
-        if(day)
+//     function isLeapYear(year) {
+//         if ((year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) || (year % 100 === 0 && year % 400 === 0)) {
+//             return true;
+//         } else {
+//             return false;
+//         }
+//     }
 
-    }
-}
+//     let date = prompt('Enter DD/MM/YYYY ');
+//     if (date.indexOf('/') == -1) {
+//         alert('Invalid date !');
+//         dayCheck();
+//     } else {
+//         let dateArr = date.split('/');
+//         let day = Number.parseInt(dateArr[0]);
+//         let month = Number.parseInt(dateArr[1]);
+//         let year = Number.parseInt(dateArr[2]);
+
+//         if (year > 1000 && year < 9999) {
+//             if (isLeapYear(year)) {
+//                 febDays = 29;
+//             } else {
+//                 febDays = 28;
+//             }
+//         } else {
+//             alert(' Invalid year !');
+//         }
+//         if (month <= 0 && month > 12) {
+//             alert('Invalid month !');
+//         } else if (oddMonth.includes(month)) {
+//             if (day <= 0 && day > 31) {
+//                 alert('Invalid day !');
+//             } else {
+//                 console.log(`${date} is valid date !`);
+//                 console.log(`The next day is ${nextDay(day, month, year)}`);
+//             }
+//         } else if (evenMonth.includes(month)) {
+//             if (day <= 0 && day > 30) {
+//                 alert('Invalid day !');
+//             } else {
+//                 console.log(`${date} is valid date !`);
+//                 console.log(`The next day is ${nextDay(day, month, year)}`);
+//             }
+//         } else if (month === 2) {
+//             if (day <= 0 && day > febDays) {
+//                 alert('Invalid day !');
+//             } else {
+//                 console.log(`${date} is valid date !`);
+//                 console.log(`The next day is ${nextDay(day, month, year)}`);
+//             }
+//         }
+
+//     }
+// }
 
 
 // let str_input = 'future academy';
 // let arr = [1,2,3,4,5,4,4,2,2,3,1,4]
 // alert(deleteSame(arr))
-staffManager();
+// staffManager();
+// dayCheck();

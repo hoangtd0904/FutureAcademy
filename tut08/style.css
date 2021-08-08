@@ -31,10 +31,15 @@ html {
     border-radius: 7px;
     display: flex;
     flex-direction: row;
-    padding: 10px 5px;
-    margin: 5px;
+    /* padding: 10px 5px; */
+    margin: 10px;
     background-color: white;
 }
+
+
+/* .box div {
+    padding: 0 16px;
+} */
 
 .fb-container {
     display: flex;
@@ -132,9 +137,111 @@ html {
 }
 
 .fb-main-content-container {
-    width: 500px;
     background-color: inherit;
 }
+
+.main-content {
+    width: 500px;
+}
+
+.posting-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.reaction-text,
+.posting-options,
+.posting-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.posting-input {
+    padding-top: 12px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ededed;
+}
+
+
+/* .posting-options {
+    padding-bottom: 5px;
+} */
+
+.posting-option {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 140px;
+    height: 24px;
+    padding: 8px;
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.posting-option:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+.mini-avatar>img {
+    border-radius: 50%;
+}
+
+.status-input {
+    width: 395px;
+    height: 22px;
+    padding: 8px 12px;
+    background-color: #ededed;
+    border-radius: 70px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.post>div {
+    padding-left: 16px;
+}
+
+.post>div:last-child {
+    padding-bottom: 12px;
+}
+
+.post-head-text {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post-more-options {
+    width: 35px;
+}
+
+.post-status>p {
+    font-weight: bolder;
+    padding: 4px 0 16px;
+}
+
+.post-reaction {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 468px;
+}
+
+.reactions-icon {
+    margin-right: 5px;
+}
+
+
+/* .reaction-text {
+    display: flex;
+    flex-direction: row
+} */
 
 
 /* sidebar */
@@ -151,11 +258,12 @@ html {
     width: 360px;
 }
 
+.post-head,
 .sidebar-head {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 8px 16px;
+    padding: 12px 16px 8px;
 }
 
 .sidebar-head>h2>a {
@@ -170,14 +278,33 @@ html {
     line-height: 250%;
 }
 
-.intro .featured {
+
+/* .intro .featured {
     display: flex;
+} */
+
+.intro h2,
+.intro p {
+    padding: 0 16px;
+}
+
+.intro h2 {
+    padding-top: 12px;
+}
+
+.intro h2:hover {
+    text-decoration: underline;
+}
+
+.featured {
+    padding: 0 16px 12px;
+    margin: 0;
 }
 
 .life-events-prevw,
 .photos-prevw,
 .friends-prevw {
-    padding: 0 16px;
+    padding: 0 16px 12px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -243,8 +370,9 @@ html {
     text-align: center;
 }
 
-.event-text>p {
+.date {
     font-size: 75%;
+    padding: 0;
 }
 
 .event-text>h3 {
@@ -265,8 +393,3 @@ html {
 .details-footer ul li>a:hover {
     text-decoration: underline;
 }
-
-
-/* .details-footer ul li>a:last-child:hover {
-    text-decoration: none;
-} */

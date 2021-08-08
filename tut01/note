@@ -1,0 +1,25 @@
+3 types of variable: 
+
+VAR : no recommend
+2 big and is a 
+
+LET: 
+command: let name = "variable";
+
+checking by console.log(name))
+--> can change the value but not override
+
+
+CONST:
+
+cmd: const name = "value";
+--> cant be change
+
+Ways to to input: 
+
+PROMPT: 
+
+Type of variable: 
+
+Primitive Data(String, Number, Boolean, Undefined, null, symbol)
+-- String 

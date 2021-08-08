@@ -1,0 +1,20 @@
+Conditional command
+
+cmd: 
+{
+    if( condition ){
+        logic code
+    } else {
+
+    }
+}
+
+// Toan tu so sanh: 
+-// > < == === <= >= != !==
+
+// Toan tu logic: 
+-// 1. && ~ And
+-// 2. || ~ Or
+-// 3. ! ~ Not
+
+

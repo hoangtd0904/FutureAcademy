@@ -1,0 +1,9 @@
+Array.isArray - test if object is an array 
+create first             -  .unshift(value)
+create last              -   .push(value)
+delete first             -  .shift()
+delete last              -  .pop()
+delete particular index  -  .splice(index, amount)
+
+map & filter
+

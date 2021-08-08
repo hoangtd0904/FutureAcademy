@@ -1,0 +1,18 @@
+query selector
+
+base properties
+
++ innerHTML, innerText, textContent 
++ style
++ children / parentElement
++ id / classList + add() , remove(), contains()
+
+base method DOM
+
++ createElement() , remove()
++ appendChild()
++ setAttribute()
+
+Event DOM
+
++ on click: 
